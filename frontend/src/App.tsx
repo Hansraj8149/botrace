@@ -6,6 +6,7 @@ import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { useEffect } from "react";
 import { useSetRecoilState } from "recoil";
 import { userAtom } from "./store/atoms/user";
+import { Topbar } from "./components/Topbar";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAHib3rDfec1lWuM59gmhK3vclbQgdONQ0",
@@ -42,7 +43,8 @@ const App = () => {
   }, [])
   return (
     <div >
-      <Signin/>
+      <Topbar/>
+      {/* <Signin/> */}
     </div>
   )
 }
