@@ -1,5 +1,5 @@
 import { signInWithPopup } from "firebase/auth";
-import { auth } from "../utils/firebase";
+import { auth } from "../App"
 import { GoogleAuthProvider } from "firebase/auth";
 
 
